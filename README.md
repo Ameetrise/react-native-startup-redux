@@ -11,11 +11,11 @@ npm install react-native-startup-redux
 ## Usage
 
 ```js
-import { multiply } from 'react-native-startup-redux';
+import { add } from 'react-native-startup-redux';
 
 // ...
 
-const result = await multiply(3, 7);
+const result = await add(3, 7);
 ```
 
 ## Contributing
