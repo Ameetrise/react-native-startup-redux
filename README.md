@@ -8,14 +8,21 @@ redux, bottom nav, drawer and component screens all set
 npm install react-native-startup-redux
 ```
 
+##Expexted Usage, under development
+
 ## Usage
 
 ```js
-import { add } from 'react-native-startup-redux';
+import { store, sagas, dispatch } from 'react-native-startup-redux';
 
 // ...
 
-const result = await add(3, 7);
+const reduxOption: ReducSetupOptions = {
+actions:[appStateAction],
+reduxers:[appStateReducer],
+actionTypes:[AppStateActionTypes],
+appState:AppState,
+};
 ```
 
 ## Contributing
